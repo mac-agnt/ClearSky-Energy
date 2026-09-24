@@ -11,7 +11,7 @@ Pulse is an attached local codebase folder (`Pulse/`), not a GitHub repo. Browse
 - `Pulse/packages/modules/site-visits` — the reusable module fixture
 
 ## Mockup files
-- `Pulse v4 Glass.dc.html` — current direction: dark liquid glass, lime accent, icon rail with
+- `Pulse v4 Glass.dc.html` — current direction: dark liquid glass, now branded for Clear Sky Energy (sky blue #1E88E5, solar amber #F5A623), icon rail with
   hover labels, Home = Helios chat + right rail, plus the real page set (inbox, work queues,
   approvals, directories, universal record page, insights, automations, system health, modules,
   notifications, settings).
@@ -29,3 +29,7 @@ Pulse is an attached local codebase folder (`Pulse/`), not a GitHub repo. Browse
 - Helios never executes write/external tools; it proposes and waits for a confirmation bound to hashed arguments.
 - The action inbox answers three things per item: what happened, why it matters, what I can do.
 - Metrics, nav, pages and Helios tools all come from the registry — module contributions are labelled as the module's.
+
+## Clear Sky Energy demo
+- All client data lives in the `CSE` block near the top of the logic script. Pages read from it; totals are computed.
+- New modules (Sales, Jobs, Warehouse, Paperwork, Finance, Crews, Records) are block specs in `buildModule`, drawn by the shared block template (`renderBlock`).
